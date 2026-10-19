@@ -67,7 +67,7 @@ above and leaves a package that is already set up alone; for the
 `ts` target it runs:
 
     npm trust github @voxgig-sdk/pokeapi-sdk \
-      --repository REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk \
+      --repository REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk \
       --file publish-ts.yml \
       --allow-publish
 

@@ -12,12 +12,12 @@ predictable and low-friction for both humans and AI agents.
 
 ## Install
 This package is not yet published to npm. Install it from the GitHub
-release tag (`ts/vX.Y.Z`, see [Tags](https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk/tags)), or from a
+release tag (`ts/vX.Y.Z`, see [Tags](https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk/tags)), or from a
 clone, which carries the compiled `dist/`:
 
 ```bash
-git clone https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk
-npm install ./yurishoo-yaseen-pokeapi-sdk/ts
+git clone https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk
+npm install ./yurishoo- -pokeapi-sdk/ts
 ```
 
 

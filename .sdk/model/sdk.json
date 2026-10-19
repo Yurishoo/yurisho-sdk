@@ -12913,19 +12913,19 @@
         }
       },
       "publisher": {
-        "name": "yurishoo Yaseen",
+        "name": "yurishoo  ",
         "security": "",
         "url": ""
       },
       "repo": {
         "host": "github.com",
-        "path": "REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk"
+        "path": "REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk"
       },
       "target": {
         "ts": {
           "active": true,
           "author": {
-            "name": "yurishoo Yaseen",
+            "name": "yurishoo  ",
             "url": ""
           },
           "base": "node_modules/@voxgig/sdkgen/project/.sdk",

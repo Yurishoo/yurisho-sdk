@@ -9,6 +9,6 @@ if [[ ! -f "$trust" ]]; then
   exit 1
 fi
 exec node "$trust" \
-  --repository 'REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk' \
+  --repository 'REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk' \
   --publish '@voxgig-sdk/pokeapi-sdk=publish-ts.yml' \
   "$@"

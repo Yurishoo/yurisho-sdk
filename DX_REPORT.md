@@ -2,14 +2,14 @@
 
 ## Summary
 
-This assessment generates a TypeScript SDK for PokéAPI from its published OpenAPI definition. PokéAPI is a public, no-key API, so the definition was practical to process without creating credentials. The SDK was generated locally with the Voxgig SDK generator and is ready for yurishoo Yaseen to publish after replacing the GitHub username placeholder in `.sdk/model/project.aontu`.
+This assessment generates a TypeScript SDK for PokéAPI from its published OpenAPI definition. PokéAPI is a public, no-key API, so the definition was practical to process without creating credentials. The SDK was generated locally with the Voxgig SDK generator and is ready for yurishoo   to publish after replacing the GitHub username placeholder in `.sdk/model/project.aontu`.
 
 ## Input and selection
 
 - API: PokéAPI
 - Definition: `openapi.yml` (OpenAPI 3.1)
 - Generator command: `npm create @voxgig/sdkgen@0.30.7 pokeapi-sdk -o . -d .\\openapi.yml`
-- Intended repository: `REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk`
+- Intended repository: `REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk`
 
 The official PokéAPI definition and repository were used as the source. A review of the Voxgig SDK catalogue did not show a PokéAPI SDK at the time of this assessment; that catalogue should be checked again before publication.
 

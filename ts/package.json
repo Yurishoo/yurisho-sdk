@@ -9,13 +9,13 @@
     "api-client",
     "pokeapi-sdk"
   ],
-  "homepage": "https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk#readme",
+  "homepage": "https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk.git"
+    "url": "git+https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo-yaseen-pokeapi-sdk/issues"
+    "url": "https://github.com/REPLACE-WITH-yurishoo-GITHUB-USERNAME/yurishoo- -pokeapi-sdk/issues"
   },
   "main": "dist/PokeapiSdkSDK.js",
   "type": "commonjs",
@@ -41,7 +41,7 @@
     "reset": "npm run clean && npm i && npm run build && npm test"
   },
   "author": {
-    "name": "yurishoo Yaseen",
+    "name": "yurishoo  ",
     "url": ""
   },
   "license": "MIT",
