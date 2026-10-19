@@ -1,0 +1,85 @@
+# Entity: utility
+
+main: kit: entity: utility: {
+
+  alias: field: {}
+
+  fields: {
+    deploy_date: {
+      h: "Deploy Date"
+      n: "deploy_date"
+      r: true
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    hash: {
+      h: "Hash"
+      n: "hash"
+      r: true
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    tag: {
+      h: "Tag"
+      n: "tag"
+      r: true
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+  }
+
+  name: "utility"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/meta/"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/v2/meta/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "meta"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

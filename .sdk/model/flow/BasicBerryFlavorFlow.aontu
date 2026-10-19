@@ -1,0 +1,44 @@
+# BasicBerryFlavorFlow
+
+main: kit: flow: BasicBerryFlavorFlow:
+{
+  entity: "berry_flavor",
+  kind: "basic",
+  name: "BasicBerryFlavorFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "berry_flavor_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "berry_flavor_ref01",
+        srcdatavar: "berry_flavor_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "berry_flavor01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-berry_flavor_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicBerryFlavorFlow"
+}

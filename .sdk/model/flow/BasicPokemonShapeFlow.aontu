@@ -1,0 +1,44 @@
+# BasicPokemonShapeFlow
+
+main: kit: flow: BasicPokemonShapeFlow:
+{
+  entity: "pokemon_shape",
+  kind: "basic",
+  name: "BasicPokemonShapeFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_shape_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokemon_shape_ref01",
+        srcdatavar: "pokemon_shape_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokemon_shape01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokemon_shape_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonShapeFlow"
+}

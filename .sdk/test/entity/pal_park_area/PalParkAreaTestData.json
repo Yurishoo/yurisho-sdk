@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "pal_park_area": {
+      "PAL_PARK_AREA00": {
+        "id": "PAL_PARK_AREA00",
+        "name": "s33",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "s36"
+      },
+      "PAL_PARK_AREA01": {
+        "id": "PAL_PARK_AREA01",
+        "name": "s65",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "s68"
+      },
+      "PAL_PARK_AREA02": {
+        "id": "PAL_PARK_AREA02",
+        "name": "s97",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "pal_park_area": {
+      "pal_park_area_ref01": {
+        "name": "sc9",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pal-park-area/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pal-park-area/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

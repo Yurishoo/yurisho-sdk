@@ -1,0 +1,61 @@
+{
+  "existing": {
+    "region": {
+      "REGION00": {
+        "id": "REGION00",
+        "locations": [],
+        "main_generation": "s52",
+        "name": "s53",
+        "names": [],
+        "pokedexes": [],
+        "url": "s56",
+        "version_groups": []
+      },
+      "REGION01": {
+        "id": "REGION01",
+        "locations": [],
+        "main_generation": "sa2",
+        "name": "sa3",
+        "names": [],
+        "pokedexes": [],
+        "url": "sa6",
+        "version_groups": []
+      },
+      "REGION02": {
+        "id": "REGION02",
+        "locations": [],
+        "main_generation": "sf2",
+        "name": "sf3",
+        "names": [],
+        "pokedexes": [],
+        "url": "sf6",
+        "version_groups": []
+      }
+    }
+  },
+  "new": {
+    "region": {
+      "region_ref01": {
+        "locations": [],
+        "main_generation": "s142",
+        "name": "s143",
+        "names": [],
+        "pokedexes": [],
+        "url": "s146",
+        "version_groups": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/region/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/region/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

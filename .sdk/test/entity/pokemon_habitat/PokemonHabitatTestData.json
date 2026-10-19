@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "pokemon_habitat": {
+      "POKEMON_HABITAT00": {
+        "id": "POKEMON_HABITAT00",
+        "name": "s33",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s36"
+      },
+      "POKEMON_HABITAT01": {
+        "id": "POKEMON_HABITAT01",
+        "name": "s65",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s68"
+      },
+      "POKEMON_HABITAT02": {
+        "id": "POKEMON_HABITAT02",
+        "name": "s97",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "pokemon_habitat": {
+      "pokemon_habitat_ref01": {
+        "name": "sc9",
+        "names": [],
+        "pokemon_species": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon-habitat/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokemon-habitat/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

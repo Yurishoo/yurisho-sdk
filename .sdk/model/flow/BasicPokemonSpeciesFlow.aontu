@@ -1,0 +1,44 @@
+# BasicPokemonSpeciesFlow
+
+main: kit: flow: BasicPokemonSpeciesFlow:
+{
+  entity: "pokemon_species",
+  kind: "basic",
+  name: "BasicPokemonSpeciesFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_species_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokemon_species_ref01",
+        srcdatavar: "pokemon_species_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokemon_species01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokemon_species_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonSpeciesFlow"
+}

@@ -1,0 +1,44 @@
+# BasicEvolutionChainFlow
+
+main: kit: flow: BasicEvolutionChainFlow:
+{
+  entity: "evolution_chain",
+  kind: "basic",
+  name: "BasicEvolutionChainFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "evolution_chain_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "evolution_chain_ref01",
+        srcdatavar: "evolution_chain_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "evolution_chain01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-evolution_chain_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicEvolutionChainFlow"
+}

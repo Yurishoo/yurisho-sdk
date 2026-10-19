@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "machine": {
+      "MACHINE00": {
+        "id": "MACHINE00",
+        "item": {},
+        "move": {},
+        "url": "s35",
+        "version_group": {}
+      },
+      "MACHINE01": {
+        "id": "MACHINE01",
+        "item": {},
+        "move": {},
+        "url": "s67",
+        "version_group": {}
+      },
+      "MACHINE02": {
+        "id": "MACHINE02",
+        "item": {},
+        "move": {},
+        "url": "s99",
+        "version_group": {}
+      }
+    }
+  },
+  "new": {
+    "machine": {
+      "machine_ref01": {
+        "item": {},
+        "move": {},
+        "url": "scb",
+        "version_group": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/machine/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/machine/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

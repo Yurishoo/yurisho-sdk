@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "egg_group": {
+      "EGG_GROUP00": {
+        "id": "EGG_GROUP00",
+        "name": "s33",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s36"
+      },
+      "EGG_GROUP01": {
+        "id": "EGG_GROUP01",
+        "name": "s65",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s68"
+      },
+      "EGG_GROUP02": {
+        "id": "EGG_GROUP02",
+        "name": "s97",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "egg_group": {
+      "egg_group_ref01": {
+        "name": "sc9",
+        "names": [],
+        "pokemon_species": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/egg-group/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/egg-group/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

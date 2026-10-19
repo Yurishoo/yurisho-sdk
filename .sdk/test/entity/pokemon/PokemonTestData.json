@@ -1,0 +1,117 @@
+{
+  "existing": {
+    "pokemon": {
+      "POKEMON00": {
+        "abilities": [],
+        "base_experience": "sdd",
+        "cries": "sde",
+        "forms": [],
+        "game_indices": [],
+        "height": "se1",
+        "held_items": [],
+        "id": "POKEMON00",
+        "is_default": true,
+        "location_area_encounters": "se5",
+        "moves": [],
+        "name": "se7",
+        "order": "se8",
+        "past_abilities": [],
+        "past_stats": [],
+        "past_types": [],
+        "species": {},
+        "sprites": "sed",
+        "stats": [],
+        "types": [],
+        "url": "sf0",
+        "weight": "sf1"
+      },
+      "POKEMON01": {
+        "abilities": [],
+        "base_experience": "s1b9",
+        "cries": "s1ba",
+        "forms": [],
+        "game_indices": [],
+        "height": "s1bd",
+        "held_items": [],
+        "id": "POKEMON01",
+        "is_default": true,
+        "location_area_encounters": "s1c1",
+        "moves": [],
+        "name": "s1c3",
+        "order": "s1c4",
+        "past_abilities": [],
+        "past_stats": [],
+        "past_types": [],
+        "species": {},
+        "sprites": "s1c9",
+        "stats": [],
+        "types": [],
+        "url": "s1cc",
+        "weight": "s1cd"
+      },
+      "POKEMON02": {
+        "abilities": [],
+        "base_experience": "s295",
+        "cries": "s296",
+        "forms": [],
+        "game_indices": [],
+        "height": "s299",
+        "held_items": [],
+        "id": "POKEMON02",
+        "is_default": true,
+        "location_area_encounters": "s29d",
+        "moves": [],
+        "name": "s29f",
+        "order": "s2a0",
+        "past_abilities": [],
+        "past_stats": [],
+        "past_types": [],
+        "species": {},
+        "sprites": "s2a5",
+        "stats": [],
+        "types": [],
+        "url": "s2a8",
+        "weight": "s2a9"
+      }
+    }
+  },
+  "new": {
+    "pokemon": {
+      "pokemon_ref01": {
+        "abilities": [],
+        "base_experience": "s371",
+        "cries": "s372",
+        "forms": [],
+        "game_indices": [],
+        "height": "s375",
+        "held_items": [],
+        "is_default": true,
+        "location_area_encounters": "s379",
+        "moves": [],
+        "name": "s37b",
+        "order": "s37c",
+        "past_abilities": [],
+        "past_stats": [],
+        "past_types": [],
+        "species": {},
+        "sprites": "s381",
+        "stats": [],
+        "types": [],
+        "url": "s384",
+        "weight": "s385"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokemon/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "existing": {
+    "stat": {
+      "STAT00": {
+        "affecting_items": [],
+        "affecting_moves": "s6f",
+        "affecting_natures": "s70",
+        "characteristics": [],
+        "game_index": 114,
+        "id": "STAT00",
+        "is_battle_only": true,
+        "move_damage_class": {},
+        "name": "s76",
+        "names": [],
+        "url": "s78"
+      },
+      "STAT01": {
+        "affecting_items": [],
+        "affecting_moves": "sdd",
+        "affecting_natures": "sde",
+        "characteristics": [],
+        "game_index": 224,
+        "id": "STAT01",
+        "is_battle_only": true,
+        "move_damage_class": {},
+        "name": "se4",
+        "names": [],
+        "url": "se6"
+      },
+      "STAT02": {
+        "affecting_items": [],
+        "affecting_moves": "s14b",
+        "affecting_natures": "s14c",
+        "characteristics": [],
+        "game_index": 334,
+        "id": "STAT02",
+        "is_battle_only": true,
+        "move_damage_class": {},
+        "name": "s152",
+        "names": [],
+        "url": "s154"
+      }
+    }
+  },
+  "new": {
+    "stat": {
+      "stat_ref01": {
+        "affecting_items": [],
+        "affecting_moves": "s1b9",
+        "affecting_natures": "s1ba",
+        "characteristics": [],
+        "game_index": 444,
+        "is_battle_only": true,
+        "move_damage_class": {},
+        "name": "s1c0",
+        "names": [],
+        "url": "s1c2"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/stat/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/stat/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

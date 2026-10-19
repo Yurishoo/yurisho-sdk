@@ -1,0 +1,44 @@
+# BasicMoveDamageClassFlow
+
+main: kit: flow: BasicMoveDamageClassFlow:
+{
+  entity: "move_damage_class",
+  kind: "basic",
+  name: "BasicMoveDamageClassFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "move_damage_class_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "move_damage_class_ref01",
+        srcdatavar: "move_damage_class_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "move_damage_class01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-move_damage_class_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMoveDamageClassFlow"
+}

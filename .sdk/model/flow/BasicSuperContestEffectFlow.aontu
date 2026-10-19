@@ -1,0 +1,44 @@
+# BasicSuperContestEffectFlow
+
+main: kit: flow: BasicSuperContestEffectFlow:
+{
+  entity: "super_contest_effect",
+  kind: "basic",
+  name: "BasicSuperContestEffectFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "super_contest_effect_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "super_contest_effect_ref01",
+        srcdatavar: "super_contest_effect_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "super_contest_effect01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-super_contest_effect_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicSuperContestEffectFlow"
+}

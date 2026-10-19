@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "item_fling_effect": {
+      "ITEM_FLING_EFFECT00": {
+        "effect_entries": [],
+        "id": "ITEM_FLING_EFFECT00",
+        "items": [],
+        "name": "s35",
+        "url": "s36"
+      },
+      "ITEM_FLING_EFFECT01": {
+        "effect_entries": [],
+        "id": "ITEM_FLING_EFFECT01",
+        "items": [],
+        "name": "s67",
+        "url": "s68"
+      },
+      "ITEM_FLING_EFFECT02": {
+        "effect_entries": [],
+        "id": "ITEM_FLING_EFFECT02",
+        "items": [],
+        "name": "s99",
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "item_fling_effect": {
+      "item_fling_effect_ref01": {
+        "effect_entries": [],
+        "items": [],
+        "name": "scb",
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/item-fling-effect/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/item-fling-effect/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

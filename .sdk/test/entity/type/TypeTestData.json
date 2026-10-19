@@ -1,0 +1,77 @@
+{
+  "existing": {
+    "type": {
+      "TYPE00": {
+        "damage_relations": "s78",
+        "game_indices": [],
+        "generation": {},
+        "id": "TYPE00",
+        "move_damage_class": {},
+        "moves": [],
+        "name": "s7e",
+        "names": [],
+        "past_damage_relations": [],
+        "pokemon": [],
+        "sprites": "s82",
+        "url": "s83"
+      },
+      "TYPE01": {
+        "damage_relations": "sf0",
+        "game_indices": [],
+        "generation": {},
+        "id": "TYPE01",
+        "move_damage_class": {},
+        "moves": [],
+        "name": "sf6",
+        "names": [],
+        "past_damage_relations": [],
+        "pokemon": [],
+        "sprites": "sfa",
+        "url": "sfb"
+      },
+      "TYPE02": {
+        "damage_relations": "s168",
+        "game_indices": [],
+        "generation": {},
+        "id": "TYPE02",
+        "move_damage_class": {},
+        "moves": [],
+        "name": "s16e",
+        "names": [],
+        "past_damage_relations": [],
+        "pokemon": [],
+        "sprites": "s172",
+        "url": "s173"
+      }
+    }
+  },
+  "new": {
+    "type": {
+      "type_ref01": {
+        "damage_relations": "s1e0",
+        "game_indices": [],
+        "generation": {},
+        "move_damage_class": {},
+        "moves": [],
+        "name": "s1e6",
+        "names": [],
+        "past_damage_relations": [],
+        "pokemon": [],
+        "sprites": "s1ea",
+        "url": "s1eb"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/type/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/type/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

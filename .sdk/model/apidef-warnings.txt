@@ -1,0 +1,26 @@
+{
+  point: "warning"
+  note: "Points GET /api/v2/move-ailment/, GET /api/v2/move-category/ and GET /api/v2/move/ on entity=move op=list have the same selector (exist: none), so only GET /api/v2/move-ailment/ is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "move"
+  op: "list"
+  points: [
+    "GET /api/v2/move-ailment/"
+    "GET /api/v2/move-category/"
+    "GET /api/v2/move/"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/v2/move-ailment/{id}/, GET /api/v2/move-category/{id}/ and GET /api/v2/move/{id}/ on entity=move op=load have the same selector (exist: id), so only GET /api/v2/move-ailment/{id}/ is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "move"
+  op: "load"
+  points: [
+    "GET /api/v2/move-ailment/{id}/"
+    "GET /api/v2/move-category/{id}/"
+    "GET /api/v2/move/{id}/"
+  ]
+
+}

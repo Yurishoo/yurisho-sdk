@@ -1,0 +1,532 @@
+# Entity: move
+
+main: kit: entity: move: {
+
+  alias: field: {}
+
+  fields: {
+    accuracy: {
+      h: "Accuracy"
+      n: "accuracy"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    contest_combos: {
+      h: "Contest Combos"
+      n: "contest_combos"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    contest_effect: {
+      h: "Contest Effect"
+      n: "contest_effect"
+      r: true
+      t: "`$OBJECT`"
+    }
+    contest_type: {
+      h: "Contest Type"
+      n: "contest_type"
+      r: true
+      t: "`$OBJECT`"
+    }
+    damage_class: {
+      h: "Damage Class"
+      n: "damage_class"
+      r: true
+      t: "`$OBJECT`"
+    }
+    descriptions: {
+      h: "Descriptions"
+      n: "descriptions"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    effect_chance: {
+      h: "Effect Chance"
+      n: "effect_chance"
+      r: true
+      t: "`$INTEGER`"
+    }
+    effect_changes: {
+      h: "Effect Changes"
+      n: "effect_changes"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    effect_entries: {
+      h: "Effect Entries"
+      n: "effect_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    flavor_text_entries: {
+      h: "Flavor Text Entries"
+      n: "flavor_text_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    generation: {
+      h: "Generation"
+      n: "generation"
+      r: true
+      t: "`$OBJECT`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    learned_by_pokemon: {
+      h: "Learned By Pokemon"
+      n: "learned_by_pokemon"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    machines: {
+      h: "Machines"
+      n: "machines"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    meta: {
+      h: "Meta"
+      n: "meta"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    moves: {
+      h: "Moves"
+      n: "moves"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    past_values: {
+      h: "Past Values"
+      n: "past_values"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    power: {
+      h: "Power"
+      n: "power"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    pp: {
+      h: "Pp"
+      n: "pp"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    priority: {
+      h: "Priority"
+      n: "priority"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    stat_changes: {
+      h: "Stat Changes"
+      n: "stat_changes"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    super_contest_effect: {
+      h: "Super Contest Effect"
+      n: "super_contest_effect"
+      r: true
+      t: "`$OBJECT`"
+    }
+    target: {
+      h: "Target"
+      n: "target"
+      r: true
+      t: "`$OBJECT`"
+    }
+    type: {
+      h: "Type"
+      n: "type"
+      r: true
+      t: "`$OBJECT`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "move"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/move-ailment/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move-ailment/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move-ailment"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/v2/move-category/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move-category/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move-category"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/v2/move/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/move-ailment/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move-ailment/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move-ailment"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/v2/move-category/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move-category/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move-category"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/v2/move/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/move/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "move"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

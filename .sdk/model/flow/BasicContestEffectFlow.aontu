@@ -1,0 +1,44 @@
+# BasicContestEffectFlow
+
+main: kit: flow: BasicContestEffectFlow:
+{
+  entity: "contest_effect",
+  kind: "basic",
+  name: "BasicContestEffectFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "contest_effect_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "contest_effect_ref01",
+        srcdatavar: "contest_effect_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "contest_effect01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-contest_effect_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicContestEffectFlow"
+}

@@ -1,0 +1,44 @@
+# BasicPokemonColorFlow
+
+main: kit: flow: BasicPokemonColorFlow:
+{
+  entity: "pokemon_color",
+  kind: "basic",
+  name: "BasicPokemonColorFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_color_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokemon_color_ref01",
+        srcdatavar: "pokemon_color_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokemon_color01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokemon_color_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonColorFlow"
+}

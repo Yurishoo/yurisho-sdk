@@ -1,0 +1,93 @@
+{
+  "existing": {
+    "item": {
+      "ITEM00": {
+        "attributes": [],
+        "baby_trigger_for": "sa1",
+        "category": {},
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "fling_effect": {},
+        "fling_power": "sa6",
+        "game_indices": [],
+        "held_by_pokemon": [],
+        "id": "ITEM00",
+        "machines": [],
+        "name": "sab",
+        "names": [],
+        "prices": [],
+        "sprites": "sae",
+        "url": "saf"
+      },
+      "ITEM01": {
+        "attributes": [],
+        "baby_trigger_for": "s141",
+        "category": {},
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "fling_effect": {},
+        "fling_power": "s146",
+        "game_indices": [],
+        "held_by_pokemon": [],
+        "id": "ITEM01",
+        "machines": [],
+        "name": "s14b",
+        "names": [],
+        "prices": [],
+        "sprites": "s14e",
+        "url": "s14f"
+      },
+      "ITEM02": {
+        "attributes": [],
+        "baby_trigger_for": "s1e1",
+        "category": {},
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "fling_effect": {},
+        "fling_power": "s1e6",
+        "game_indices": [],
+        "held_by_pokemon": [],
+        "id": "ITEM02",
+        "machines": [],
+        "name": "s1eb",
+        "names": [],
+        "prices": [],
+        "sprites": "s1ee",
+        "url": "s1ef"
+      }
+    }
+  },
+  "new": {
+    "item": {
+      "item_ref01": {
+        "attributes": [],
+        "baby_trigger_for": "s281",
+        "category": {},
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "fling_effect": {},
+        "fling_power": "s286",
+        "game_indices": [],
+        "held_by_pokemon": [],
+        "machines": [],
+        "name": "s28b",
+        "names": [],
+        "prices": [],
+        "sprites": "s28e",
+        "url": "s28f"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/item/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/item/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

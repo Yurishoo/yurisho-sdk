@@ -1,0 +1,44 @@
+# BasicPokemonHabitatFlow
+
+main: kit: flow: BasicPokemonHabitatFlow:
+{
+  entity: "pokemon_habitat",
+  kind: "basic",
+  name: "BasicPokemonHabitatFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_habitat_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokemon_habitat_ref01",
+        srcdatavar: "pokemon_habitat_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokemon_habitat01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokemon_habitat_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonHabitatFlow"
+}

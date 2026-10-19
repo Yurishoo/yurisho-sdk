@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "version": {
+      "VERSION00": {
+        "id": "VERSION00",
+        "name": "s33",
+        "names": [],
+        "url": "s35",
+        "version_group": {}
+      },
+      "VERSION01": {
+        "id": "VERSION01",
+        "name": "s65",
+        "names": [],
+        "url": "s67",
+        "version_group": {}
+      },
+      "VERSION02": {
+        "id": "VERSION02",
+        "name": "s97",
+        "names": [],
+        "url": "s99",
+        "version_group": {}
+      }
+    }
+  },
+  "new": {
+    "version": {
+      "version_ref01": {
+        "name": "sc9",
+        "names": [],
+        "url": "scb",
+        "version_group": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/version/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/version/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

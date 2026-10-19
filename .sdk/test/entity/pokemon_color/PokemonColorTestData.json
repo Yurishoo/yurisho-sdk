@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "pokemon_color": {
+      "POKEMON_COLOR00": {
+        "id": "POKEMON_COLOR00",
+        "name": "s33",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s36"
+      },
+      "POKEMON_COLOR01": {
+        "id": "POKEMON_COLOR01",
+        "name": "s65",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s68"
+      },
+      "POKEMON_COLOR02": {
+        "id": "POKEMON_COLOR02",
+        "name": "s97",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "pokemon_color": {
+      "pokemon_color_ref01": {
+        "name": "sc9",
+        "names": [],
+        "pokemon_species": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon-color/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokemon-color/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

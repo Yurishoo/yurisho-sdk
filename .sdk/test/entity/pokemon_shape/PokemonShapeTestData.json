@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "pokemon_shape": {
+      "POKEMON_SHAPE00": {
+        "awesome_names": [],
+        "id": "POKEMON_SHAPE00",
+        "name": "s3e",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s41"
+      },
+      "POKEMON_SHAPE01": {
+        "awesome_names": [],
+        "id": "POKEMON_SHAPE01",
+        "name": "s7a",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s7d"
+      },
+      "POKEMON_SHAPE02": {
+        "awesome_names": [],
+        "id": "POKEMON_SHAPE02",
+        "name": "sb6",
+        "names": [],
+        "pokemon_species": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "pokemon_shape": {
+      "pokemon_shape_ref01": {
+        "awesome_names": [],
+        "name": "sf2",
+        "names": [],
+        "pokemon_species": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon-shape/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokemon-shape/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

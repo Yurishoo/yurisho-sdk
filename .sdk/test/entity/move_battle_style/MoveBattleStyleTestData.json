@@ -1,0 +1,45 @@
+{
+  "existing": {
+    "move_battle_style": {
+      "MOVE_BATTLE_STYLE00": {
+        "id": "MOVE_BATTLE_STYLE00",
+        "name": "s29",
+        "names": [],
+        "url": "s2b"
+      },
+      "MOVE_BATTLE_STYLE01": {
+        "id": "MOVE_BATTLE_STYLE01",
+        "name": "s51",
+        "names": [],
+        "url": "s53"
+      },
+      "MOVE_BATTLE_STYLE02": {
+        "id": "MOVE_BATTLE_STYLE02",
+        "name": "s79",
+        "names": [],
+        "url": "s7b"
+      }
+    }
+  },
+  "new": {
+    "move_battle_style": {
+      "move_battle_style_ref01": {
+        "name": "sa1",
+        "names": [],
+        "url": "sa3"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/move-battle-style/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-battle-style/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

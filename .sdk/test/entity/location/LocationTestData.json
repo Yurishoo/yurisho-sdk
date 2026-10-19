@@ -1,0 +1,57 @@
+{
+  "existing": {
+    "location": {
+      "LOCATION00": {
+        "areas": [],
+        "game_indices": [],
+        "id": "LOCATION00",
+        "name": "s49",
+        "names": [],
+        "region": "s4b",
+        "url": "s4c"
+      },
+      "LOCATION01": {
+        "areas": [],
+        "game_indices": [],
+        "id": "LOCATION01",
+        "name": "s8f",
+        "names": [],
+        "region": "s91",
+        "url": "s92"
+      },
+      "LOCATION02": {
+        "areas": [],
+        "game_indices": [],
+        "id": "LOCATION02",
+        "name": "sd5",
+        "names": [],
+        "region": "sd7",
+        "url": "sd8"
+      }
+    }
+  },
+  "new": {
+    "location": {
+      "location_ref01": {
+        "areas": [],
+        "game_indices": [],
+        "name": "s11b",
+        "names": [],
+        "region": "s11d",
+        "url": "s11e"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/location/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/location/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

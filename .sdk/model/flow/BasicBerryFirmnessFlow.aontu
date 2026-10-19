@@ -1,0 +1,44 @@
+# BasicBerryFirmnessFlow
+
+main: kit: flow: BasicBerryFirmnessFlow:
+{
+  entity: "berry_firmness",
+  kind: "basic",
+  name: "BasicBerryFirmnessFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "berry_firmness_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "berry_firmness_ref01",
+        srcdatavar: "berry_firmness_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "berry_firmness01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-berry_firmness_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicBerryFirmnessFlow"
+}

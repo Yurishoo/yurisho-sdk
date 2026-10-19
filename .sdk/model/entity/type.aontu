@@ -1,0 +1,213 @@
+# Entity: type
+
+main: kit: entity: type: {
+
+  alias: field: {}
+
+  fields: {
+    damage_relations: {
+      h: "Damage Relations"
+      n: "damage_relations"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    game_indices: {
+      h: "Game Indices"
+      n: "game_indices"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    generation: {
+      h: "Generation"
+      n: "generation"
+      r: true
+      t: "`$OBJECT`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    move_damage_class: {
+      h: "Move Damage Class"
+      n: "move_damage_class"
+      r: true
+      t: "`$OBJECT`"
+    }
+    moves: {
+      h: "Moves"
+      n: "moves"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    past_damage_relations: {
+      h: "Past Damage Relations"
+      n: "past_damage_relations"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    pokemon: {
+      h: "Pokemon"
+      n: "pokemon"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    sprites: {
+      h: "Sprites"
+      n: "sprites"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "type"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/type/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/type/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "type"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/type/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/type/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "type"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

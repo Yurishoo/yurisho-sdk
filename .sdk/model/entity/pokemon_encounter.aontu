@@ -1,0 +1,99 @@
+# Entity: pokemon_encounter
+
+main: kit: entity: pokemon_encounter: {
+
+  alias: field: {}
+
+  fields: {
+    id: {
+      h: "Id"
+      n: "id"
+      r: false
+      t: "`$STRING`"
+    }
+    location_area: {
+      h: "Location Area"
+      n: "location_area"
+      r: true
+      t: "`$OBJECT`"
+    }
+    version_details: {
+      h: "Version Details"
+      n: "version_details"
+      r: true
+      t: "`$ARRAY`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "pokemon_encounter"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon/{pokemon_id}/encounters"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "pokemon_id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon/{pokemon_id}/encounters"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          r: {
+            param: {
+              pokemon_id: "id"
+            }
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon"
+            }
+            {
+              var: "id"
+            }
+            {
+              lit: "encounters"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

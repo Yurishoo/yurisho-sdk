@@ -1,0 +1,45 @@
+{
+  "existing": {
+    "evolution_chain": {
+      "EVOLUTION_CHAIN00": {
+        "baby_trigger_item": {},
+        "chain": "s29",
+        "id": "EVOLUTION_CHAIN00",
+        "url": "s2b"
+      },
+      "EVOLUTION_CHAIN01": {
+        "baby_trigger_item": {},
+        "chain": "s51",
+        "id": "EVOLUTION_CHAIN01",
+        "url": "s53"
+      },
+      "EVOLUTION_CHAIN02": {
+        "baby_trigger_item": {},
+        "chain": "s79",
+        "id": "EVOLUTION_CHAIN02",
+        "url": "s7b"
+      }
+    }
+  },
+  "new": {
+    "evolution_chain": {
+      "evolution_chain_ref01": {
+        "baby_trigger_item": {},
+        "chain": "sa1",
+        "url": "sa3"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/evolution-chain/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/evolution-chain/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

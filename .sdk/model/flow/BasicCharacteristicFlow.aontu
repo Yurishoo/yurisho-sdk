@@ -1,0 +1,44 @@
+# BasicCharacteristicFlow
+
+main: kit: flow: BasicCharacteristicFlow:
+{
+  entity: "characteristic",
+  kind: "basic",
+  name: "BasicCharacteristicFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "characteristic_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "characteristic_ref01",
+        srcdatavar: "characteristic_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "characteristic01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-characteristic_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicCharacteristicFlow"
+}

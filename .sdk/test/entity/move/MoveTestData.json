@@ -1,0 +1,157 @@
+{
+  "existing": {
+    "move": {
+      "MOVE00": {
+        "accuracy": "s10e",
+        "contest_combos": "s10f",
+        "contest_effect": {},
+        "contest_type": {},
+        "damage_class": {},
+        "descriptions": [],
+        "effect_chance": 276,
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "MOVE00",
+        "learned_by_pokemon": [],
+        "machines": [],
+        "meta": "s11c",
+        "moves": [],
+        "name": "s11e",
+        "names": [],
+        "past_values": [],
+        "power": "s121",
+        "pp": "s122",
+        "priority": "s123",
+        "stat_changes": [],
+        "super_contest_effect": {},
+        "target": {},
+        "type": {},
+        "url": "s128"
+      },
+      "MOVE01": {
+        "accuracy": "s21c",
+        "contest_combos": "s21d",
+        "contest_effect": {},
+        "contest_type": {},
+        "damage_class": {},
+        "descriptions": [],
+        "effect_chance": 546,
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "MOVE01",
+        "learned_by_pokemon": [],
+        "machines": [],
+        "meta": "s22a",
+        "moves": [],
+        "name": "s22c",
+        "names": [],
+        "past_values": [],
+        "power": "s22f",
+        "pp": "s230",
+        "priority": "s231",
+        "stat_changes": [],
+        "super_contest_effect": {},
+        "target": {},
+        "type": {},
+        "url": "s236"
+      },
+      "MOVE02": {
+        "accuracy": "s32a",
+        "contest_combos": "s32b",
+        "contest_effect": {},
+        "contest_type": {},
+        "damage_class": {},
+        "descriptions": [],
+        "effect_chance": 816,
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "MOVE02",
+        "learned_by_pokemon": [],
+        "machines": [],
+        "meta": "s338",
+        "moves": [],
+        "name": "s33a",
+        "names": [],
+        "past_values": [],
+        "power": "s33d",
+        "pp": "s33e",
+        "priority": "s33f",
+        "stat_changes": [],
+        "super_contest_effect": {},
+        "target": {},
+        "type": {},
+        "url": "s344"
+      }
+    }
+  },
+  "new": {
+    "move": {
+      "move_ref01": {
+        "accuracy": "s438",
+        "contest_combos": "s439",
+        "contest_effect": {},
+        "contest_type": {},
+        "damage_class": {},
+        "descriptions": [],
+        "effect_chance": 1086,
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "learned_by_pokemon": [],
+        "machines": [],
+        "meta": "s446",
+        "moves": [],
+        "name": "s448",
+        "names": [],
+        "past_values": [],
+        "power": "s44b",
+        "pp": "s44c",
+        "priority": "s44d",
+        "stat_changes": [],
+        "super_contest_effect": {},
+        "target": {},
+        "type": {},
+        "url": "s452"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/move-ailment/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-category/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-ailment/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-category/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

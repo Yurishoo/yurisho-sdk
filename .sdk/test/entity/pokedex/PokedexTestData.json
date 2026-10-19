@@ -1,0 +1,65 @@
+{
+  "existing": {
+    "pokedex": {
+      "POKEDEX00": {
+        "descriptions": [],
+        "id": "POKEDEX00",
+        "is_main_series": true,
+        "name": "s5d",
+        "names": [],
+        "pokemon_entries": [],
+        "region": {},
+        "url": "s61",
+        "version_groups": []
+      },
+      "POKEDEX01": {
+        "descriptions": [],
+        "id": "POKEDEX01",
+        "is_main_series": true,
+        "name": "sb7",
+        "names": [],
+        "pokemon_entries": [],
+        "region": {},
+        "url": "sbb",
+        "version_groups": []
+      },
+      "POKEDEX02": {
+        "descriptions": [],
+        "id": "POKEDEX02",
+        "is_main_series": true,
+        "name": "s111",
+        "names": [],
+        "pokemon_entries": [],
+        "region": {},
+        "url": "s115",
+        "version_groups": []
+      }
+    }
+  },
+  "new": {
+    "pokedex": {
+      "pokedex_ref01": {
+        "descriptions": [],
+        "is_main_series": true,
+        "name": "s16b",
+        "names": [],
+        "pokemon_entries": [],
+        "region": {},
+        "url": "s16f",
+        "version_groups": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokedex/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokedex/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

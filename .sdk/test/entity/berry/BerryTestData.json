@@ -1,0 +1,81 @@
+{
+  "existing": {
+    "berry": {
+      "BERRY00": {
+        "firmness": {},
+        "flavors": [],
+        "growth_time": "s84",
+        "id": "BERRY00",
+        "item": {},
+        "max_harvest": "s87",
+        "name": "s88",
+        "natural_gift_power": "s89",
+        "natural_gift_type": {},
+        "size": "s8b",
+        "smoothness": "s8c",
+        "soil_dryness": "s8d",
+        "url": "s8e"
+      },
+      "BERRY01": {
+        "firmness": {},
+        "flavors": [],
+        "growth_time": "s106",
+        "id": "BERRY01",
+        "item": {},
+        "max_harvest": "s109",
+        "name": "s10a",
+        "natural_gift_power": "s10b",
+        "natural_gift_type": {},
+        "size": "s10d",
+        "smoothness": "s10e",
+        "soil_dryness": "s10f",
+        "url": "s110"
+      },
+      "BERRY02": {
+        "firmness": {},
+        "flavors": [],
+        "growth_time": "s188",
+        "id": "BERRY02",
+        "item": {},
+        "max_harvest": "s18b",
+        "name": "s18c",
+        "natural_gift_power": "s18d",
+        "natural_gift_type": {},
+        "size": "s18f",
+        "smoothness": "s190",
+        "soil_dryness": "s191",
+        "url": "s192"
+      }
+    }
+  },
+  "new": {
+    "berry": {
+      "berry_ref01": {
+        "firmness": {},
+        "flavors": [],
+        "growth_time": "s20a",
+        "item": {},
+        "max_harvest": "s20d",
+        "name": "s20e",
+        "natural_gift_power": "s20f",
+        "natural_gift_type": {},
+        "size": "s211",
+        "smoothness": "s212",
+        "soil_dryness": "s213",
+        "url": "s214"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/berry/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/berry/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

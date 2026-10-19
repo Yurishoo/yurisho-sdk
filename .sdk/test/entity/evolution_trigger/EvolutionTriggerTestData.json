@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "evolution_trigger": {
+      "EVOLUTION_TRIGGER00": {
+        "id": "EVOLUTION_TRIGGER00",
+        "name": "s33",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s36"
+      },
+      "EVOLUTION_TRIGGER01": {
+        "id": "EVOLUTION_TRIGGER01",
+        "name": "s65",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s68"
+      },
+      "EVOLUTION_TRIGGER02": {
+        "id": "EVOLUTION_TRIGGER02",
+        "name": "s97",
+        "names": [],
+        "pokemon_species": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "evolution_trigger": {
+      "evolution_trigger_ref01": {
+        "name": "sc9",
+        "names": [],
+        "pokemon_species": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/evolution-trigger/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/evolution-trigger/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

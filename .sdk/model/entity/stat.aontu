@@ -1,0 +1,205 @@
+# Entity: stat
+
+main: kit: entity: stat: {
+
+  alias: field: {}
+
+  fields: {
+    affecting_items: {
+      h: "Affecting Items"
+      n: "affecting_items"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    affecting_moves: {
+      h: "Affecting Moves"
+      n: "affecting_moves"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    affecting_natures: {
+      h: "Affecting Natures"
+      n: "affecting_natures"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    characteristics: {
+      h: "Characteristics"
+      n: "characteristics"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    game_index: {
+      h: "Game Index"
+      n: "game_index"
+      r: true
+      t: "`$INTEGER`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    is_battle_only: {
+      h: "Is Battle Only"
+      n: "is_battle_only"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    move_damage_class: {
+      h: "Move Damage Class"
+      n: "move_damage_class"
+      r: true
+      t: "`$OBJECT`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "stat"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/stat/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/stat/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "stat"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/stat/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/stat/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "stat"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

@@ -1,0 +1,303 @@
+# Entity: pokemon
+
+main: kit: entity: pokemon: {
+
+  alias: field: {}
+
+  fields: {
+    abilities: {
+      h: "Abilities"
+      n: "abilities"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    base_experience: {
+      h: "Base Experience"
+      n: "base_experience"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    cries: {
+      h: "Cries"
+      n: "cries"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    forms: {
+      h: "Forms"
+      n: "forms"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    game_indices: {
+      h: "Game Indices"
+      n: "game_indices"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    height: {
+      h: "Height"
+      n: "height"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    held_items: {
+      h: "Held Items"
+      n: "held_items"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    is_default: {
+      h: "Is Default"
+      n: "is_default"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    location_area_encounters: {
+      h: "Location Area Encounters"
+      n: "location_area_encounters"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+    moves: {
+      h: "Moves"
+      n: "moves"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    order: {
+      h: "Order"
+      n: "order"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    past_abilities: {
+      h: "Past Abilities"
+      n: "past_abilities"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    past_stats: {
+      h: "Past Stats"
+      n: "past_stats"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    past_types: {
+      h: "Past Types"
+      n: "past_types"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    species: {
+      h: "Species"
+      n: "species"
+      r: true
+      t: "`$OBJECT`"
+    }
+    sprites: {
+      h: "Sprites"
+      n: "sprites"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    stats: {
+      h: "Stats"
+      n: "stats"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    types: {
+      h: "Types"
+      n: "types"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+    weight: {
+      h: "Weight"
+      n: "weight"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "pokemon"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

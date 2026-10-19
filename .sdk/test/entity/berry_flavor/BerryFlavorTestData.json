@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "berry_flavor": {
+      "BERRY_FLAVOR00": {
+        "berries": [],
+        "contest_type": {},
+        "id": "BERRY_FLAVOR00",
+        "name": "s3f",
+        "names": [],
+        "url": "s41"
+      },
+      "BERRY_FLAVOR01": {
+        "berries": [],
+        "contest_type": {},
+        "id": "BERRY_FLAVOR01",
+        "name": "s7b",
+        "names": [],
+        "url": "s7d"
+      },
+      "BERRY_FLAVOR02": {
+        "berries": [],
+        "contest_type": {},
+        "id": "BERRY_FLAVOR02",
+        "name": "sb7",
+        "names": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "berry_flavor": {
+      "berry_flavor_ref01": {
+        "berries": [],
+        "contest_type": {},
+        "name": "sf3",
+        "names": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/berry-flavor/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/berry-flavor/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

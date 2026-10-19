@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "encounter_condition_value": {
+      "ENCOUNTER_CONDITION_VALUE00": {
+        "condition": {},
+        "id": "ENCOUNTER_CONDITION_VALUE00",
+        "name": "s34",
+        "names": [],
+        "url": "s36"
+      },
+      "ENCOUNTER_CONDITION_VALUE01": {
+        "condition": {},
+        "id": "ENCOUNTER_CONDITION_VALUE01",
+        "name": "s66",
+        "names": [],
+        "url": "s68"
+      },
+      "ENCOUNTER_CONDITION_VALUE02": {
+        "condition": {},
+        "id": "ENCOUNTER_CONDITION_VALUE02",
+        "name": "s98",
+        "names": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "encounter_condition_value": {
+      "encounter_condition_value_ref01": {
+        "condition": {},
+        "name": "sca",
+        "names": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/encounter-condition-value/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/encounter-condition-value/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

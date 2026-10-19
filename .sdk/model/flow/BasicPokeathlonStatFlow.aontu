@@ -1,0 +1,44 @@
+# BasicPokeathlonStatFlow
+
+main: kit: flow: BasicPokeathlonStatFlow:
+{
+  entity: "pokeathlon_stat",
+  kind: "basic",
+  name: "BasicPokeathlonStatFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokeathlon_stat_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokeathlon_stat_ref01",
+        srcdatavar: "pokeathlon_stat_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokeathlon_stat01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokeathlon_stat_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokeathlonStatFlow"
+}

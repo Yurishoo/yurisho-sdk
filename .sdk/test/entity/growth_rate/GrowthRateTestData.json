@@ -1,0 +1,57 @@
+{
+  "existing": {
+    "growth_rate": {
+      "GROWTH_RATE00": {
+        "descriptions": [],
+        "formula": "s47",
+        "id": "GROWTH_RATE00",
+        "levels": [],
+        "name": "s4a",
+        "pokemon_species": [],
+        "url": "s4c"
+      },
+      "GROWTH_RATE01": {
+        "descriptions": [],
+        "formula": "s8d",
+        "id": "GROWTH_RATE01",
+        "levels": [],
+        "name": "s90",
+        "pokemon_species": [],
+        "url": "s92"
+      },
+      "GROWTH_RATE02": {
+        "descriptions": [],
+        "formula": "sd3",
+        "id": "GROWTH_RATE02",
+        "levels": [],
+        "name": "sd6",
+        "pokemon_species": [],
+        "url": "sd8"
+      }
+    }
+  },
+  "new": {
+    "growth_rate": {
+      "growth_rate_ref01": {
+        "descriptions": [],
+        "formula": "s119",
+        "levels": [],
+        "name": "s11c",
+        "pokemon_species": [],
+        "url": "s11e"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/growth-rate/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/growth-rate/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

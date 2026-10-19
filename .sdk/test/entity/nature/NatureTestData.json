@@ -1,0 +1,73 @@
+{
+  "existing": {
+    "nature": {
+      "NATURE00": {
+        "berries": [],
+        "decreased_stat": {},
+        "hates_flavor": {},
+        "id": "NATURE00",
+        "increased_stat": {},
+        "likes_flavor": {},
+        "move_battle_style_preferences": [],
+        "name": "s75",
+        "names": [],
+        "pokeathlon_stat_changes": [],
+        "url": "s78"
+      },
+      "NATURE01": {
+        "berries": [],
+        "decreased_stat": {},
+        "hates_flavor": {},
+        "id": "NATURE01",
+        "increased_stat": {},
+        "likes_flavor": {},
+        "move_battle_style_preferences": [],
+        "name": "se3",
+        "names": [],
+        "pokeathlon_stat_changes": [],
+        "url": "se6"
+      },
+      "NATURE02": {
+        "berries": [],
+        "decreased_stat": {},
+        "hates_flavor": {},
+        "id": "NATURE02",
+        "increased_stat": {},
+        "likes_flavor": {},
+        "move_battle_style_preferences": [],
+        "name": "s151",
+        "names": [],
+        "pokeathlon_stat_changes": [],
+        "url": "s154"
+      }
+    }
+  },
+  "new": {
+    "nature": {
+      "nature_ref01": {
+        "berries": [],
+        "decreased_stat": {},
+        "hates_flavor": {},
+        "increased_stat": {},
+        "likes_flavor": {},
+        "move_battle_style_preferences": [],
+        "name": "s1bf",
+        "names": [],
+        "pokeathlon_stat_changes": [],
+        "url": "s1c2"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/nature/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/nature/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

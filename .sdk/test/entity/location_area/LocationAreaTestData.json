@@ -1,0 +1,61 @@
+{
+  "existing": {
+    "location_area": {
+      "LOCATION_AREA00": {
+        "encounter_method_rates": [],
+        "game_index": 81,
+        "id": "LOCATION_AREA00",
+        "location": {},
+        "name": "s54",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "s57"
+      },
+      "LOCATION_AREA01": {
+        "encounter_method_rates": [],
+        "game_index": 161,
+        "id": "LOCATION_AREA01",
+        "location": {},
+        "name": "sa4",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "sa7"
+      },
+      "LOCATION_AREA02": {
+        "encounter_method_rates": [],
+        "game_index": 241,
+        "id": "LOCATION_AREA02",
+        "location": {},
+        "name": "sf4",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "sf7"
+      }
+    }
+  },
+  "new": {
+    "location_area": {
+      "location_area_ref01": {
+        "encounter_method_rates": [],
+        "game_index": 321,
+        "location": {},
+        "name": "s144",
+        "names": [],
+        "pokemon_encounters": [],
+        "url": "s147"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/location-area/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/location-area/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

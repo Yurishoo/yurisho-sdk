@@ -1,0 +1,57 @@
+{
+  "existing": {
+    "language": {
+      "LANGUAGE00": {
+        "id": "LANGUAGE00",
+        "iso3166": "s47",
+        "iso639": "s48",
+        "name": "s49",
+        "names": [],
+        "official": false,
+        "url": "s4c"
+      },
+      "LANGUAGE01": {
+        "id": "LANGUAGE01",
+        "iso3166": "s8d",
+        "iso639": "s8e",
+        "name": "s8f",
+        "names": [],
+        "official": false,
+        "url": "s92"
+      },
+      "LANGUAGE02": {
+        "id": "LANGUAGE02",
+        "iso3166": "sd3",
+        "iso639": "sd4",
+        "name": "sd5",
+        "names": [],
+        "official": false,
+        "url": "sd8"
+      }
+    }
+  },
+  "new": {
+    "language": {
+      "language_ref01": {
+        "iso3166": "s119",
+        "iso639": "s11a",
+        "name": "s11b",
+        "names": [],
+        "official": false,
+        "url": "s11e"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/language/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/language/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

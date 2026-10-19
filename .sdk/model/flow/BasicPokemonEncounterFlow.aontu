@@ -1,0 +1,26 @@
+# BasicPokemonEncounterFlow
+
+main: kit: flow: BasicPokemonEncounterFlow:
+{
+  entity: "pokemon_encounter",
+  kind: "basic",
+  name: "BasicPokemonEncounterFlow",
+  step: [
+    {
+      m: {
+        pokemon_id: "pokemon01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_encounter_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonEncounterFlow"
+}

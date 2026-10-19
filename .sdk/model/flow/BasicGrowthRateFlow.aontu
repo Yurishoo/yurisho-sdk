@@ -1,0 +1,44 @@
+# BasicGrowthRateFlow
+
+main: kit: flow: BasicGrowthRateFlow:
+{
+  entity: "growth_rate",
+  kind: "basic",
+  name: "BasicGrowthRateFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "growth_rate_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "growth_rate_ref01",
+        srcdatavar: "growth_rate_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "growth_rate01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-growth_rate_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicGrowthRateFlow"
+}

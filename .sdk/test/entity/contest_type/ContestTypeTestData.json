@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "contest_type": {
+      "CONTEST_TYPE00": {
+        "berry_flavor": "s32",
+        "id": "CONTEST_TYPE00",
+        "name": "s34",
+        "names": [],
+        "url": "s36"
+      },
+      "CONTEST_TYPE01": {
+        "berry_flavor": "s64",
+        "id": "CONTEST_TYPE01",
+        "name": "s66",
+        "names": [],
+        "url": "s68"
+      },
+      "CONTEST_TYPE02": {
+        "berry_flavor": "s96",
+        "id": "CONTEST_TYPE02",
+        "name": "s98",
+        "names": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "contest_type": {
+      "contest_type_ref01": {
+        "berry_flavor": "sc8",
+        "name": "sca",
+        "names": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/contest-type/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/contest-type/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

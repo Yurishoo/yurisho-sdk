@@ -1,0 +1,44 @@
+# BasicMoveLearnMethodFlow
+
+main: kit: flow: BasicMoveLearnMethodFlow:
+{
+  entity: "move_learn_method",
+  kind: "basic",
+  name: "BasicMoveLearnMethodFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "move_learn_method_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "move_learn_method_ref01",
+        srcdatavar: "move_learn_method_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "move_learn_method01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-move_learn_method_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMoveLearnMethodFlow"
+}

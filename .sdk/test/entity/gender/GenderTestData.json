@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "gender": {
+      "GENDER00": {
+        "id": "GENDER00",
+        "name": "s33",
+        "pokemon_species_details": [],
+        "required_for_evolution": [],
+        "url": "s36"
+      },
+      "GENDER01": {
+        "id": "GENDER01",
+        "name": "s65",
+        "pokemon_species_details": [],
+        "required_for_evolution": [],
+        "url": "s68"
+      },
+      "GENDER02": {
+        "id": "GENDER02",
+        "name": "s97",
+        "pokemon_species_details": [],
+        "required_for_evolution": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "gender": {
+      "gender_ref01": {
+        "name": "sc9",
+        "pokemon_species_details": [],
+        "required_for_evolution": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/gender/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/gender/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

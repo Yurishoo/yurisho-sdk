@@ -1,0 +1,44 @@
+# BasicNatureFlow
+
+main: kit: flow: BasicNatureFlow:
+{
+  entity: "nature",
+  kind: "basic",
+  name: "BasicNatureFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "nature_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "nature_ref01",
+        srcdatavar: "nature_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "nature01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-nature_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicNatureFlow"
+}

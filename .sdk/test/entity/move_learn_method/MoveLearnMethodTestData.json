@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "move_learn_method": {
+      "MOVE_LEARN_METHOD00": {
+        "descriptions": [],
+        "id": "MOVE_LEARN_METHOD00",
+        "name": "s3e",
+        "names": [],
+        "url": "s40",
+        "version_groups": []
+      },
+      "MOVE_LEARN_METHOD01": {
+        "descriptions": [],
+        "id": "MOVE_LEARN_METHOD01",
+        "name": "s7a",
+        "names": [],
+        "url": "s7c",
+        "version_groups": []
+      },
+      "MOVE_LEARN_METHOD02": {
+        "descriptions": [],
+        "id": "MOVE_LEARN_METHOD02",
+        "name": "sb6",
+        "names": [],
+        "url": "sb8",
+        "version_groups": []
+      }
+    }
+  },
+  "new": {
+    "move_learn_method": {
+      "move_learn_method_ref01": {
+        "descriptions": [],
+        "name": "sf2",
+        "names": [],
+        "url": "sf4",
+        "version_groups": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/move-learn-method/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-learn-method/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

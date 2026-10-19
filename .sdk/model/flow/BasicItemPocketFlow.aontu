@@ -1,0 +1,44 @@
+# BasicItemPocketFlow
+
+main: kit: flow: BasicItemPocketFlow:
+{
+  entity: "item_pocket",
+  kind: "basic",
+  name: "BasicItemPocketFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "item_pocket_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "item_pocket_ref01",
+        srcdatavar: "item_pocket_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "item_pocket01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-item_pocket_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicItemPocketFlow"
+}

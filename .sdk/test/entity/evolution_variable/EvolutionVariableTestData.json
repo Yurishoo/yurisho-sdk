@@ -1,0 +1,65 @@
+{
+  "existing": {
+    "evolution_variable": {
+      "EVOLUTION_VARIABLE00": {
+        "data_type": "s5a",
+        "descriptions": [],
+        "id": "EVOLUTION_VARIABLE00",
+        "name": "s5d",
+        "names": [],
+        "source": "s5f",
+        "symbol": "s60",
+        "url": "s61",
+        "version_group": {}
+      },
+      "EVOLUTION_VARIABLE01": {
+        "data_type": "sb4",
+        "descriptions": [],
+        "id": "EVOLUTION_VARIABLE01",
+        "name": "sb7",
+        "names": [],
+        "source": "sb9",
+        "symbol": "sba",
+        "url": "sbb",
+        "version_group": {}
+      },
+      "EVOLUTION_VARIABLE02": {
+        "data_type": "s10e",
+        "descriptions": [],
+        "id": "EVOLUTION_VARIABLE02",
+        "name": "s111",
+        "names": [],
+        "source": "s113",
+        "symbol": "s114",
+        "url": "s115",
+        "version_group": {}
+      }
+    }
+  },
+  "new": {
+    "evolution_variable": {
+      "evolution_variable_ref01": {
+        "data_type": "s168",
+        "descriptions": [],
+        "name": "s16b",
+        "names": [],
+        "source": "s16d",
+        "symbol": "s16e",
+        "url": "s16f",
+        "version_group": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/evolution-variable/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/evolution-variable/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

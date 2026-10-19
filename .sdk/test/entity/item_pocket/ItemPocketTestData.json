@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "item_pocket": {
+      "ITEM_POCKET00": {
+        "categories": [],
+        "id": "ITEM_POCKET00",
+        "name": "s34",
+        "names": [],
+        "url": "s36"
+      },
+      "ITEM_POCKET01": {
+        "categories": [],
+        "id": "ITEM_POCKET01",
+        "name": "s66",
+        "names": [],
+        "url": "s68"
+      },
+      "ITEM_POCKET02": {
+        "categories": [],
+        "id": "ITEM_POCKET02",
+        "name": "s98",
+        "names": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "item_pocket": {
+      "item_pocket_ref01": {
+        "categories": [],
+        "name": "sca",
+        "names": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/item-pocket/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/item-pocket/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

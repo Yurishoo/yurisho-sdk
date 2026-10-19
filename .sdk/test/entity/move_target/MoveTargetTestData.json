@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "move_target": {
+      "MOVE_TARGET00": {
+        "descriptions": [],
+        "id": "MOVE_TARGET00",
+        "moves": [],
+        "name": "s3f",
+        "names": [],
+        "url": "s41"
+      },
+      "MOVE_TARGET01": {
+        "descriptions": [],
+        "id": "MOVE_TARGET01",
+        "moves": [],
+        "name": "s7b",
+        "names": [],
+        "url": "s7d"
+      },
+      "MOVE_TARGET02": {
+        "descriptions": [],
+        "id": "MOVE_TARGET02",
+        "moves": [],
+        "name": "sb7",
+        "names": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "move_target": {
+      "move_target_ref01": {
+        "descriptions": [],
+        "moves": [],
+        "name": "sf3",
+        "names": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/move-target/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-target/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

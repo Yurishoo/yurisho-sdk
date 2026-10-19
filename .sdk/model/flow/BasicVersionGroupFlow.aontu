@@ -1,0 +1,44 @@
+# BasicVersionGroupFlow
+
+main: kit: flow: BasicVersionGroupFlow:
+{
+  entity: "version_group",
+  kind: "basic",
+  name: "BasicVersionGroupFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "version_group_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "version_group_ref01",
+        srcdatavar: "version_group_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "version_group01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-version_group_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicVersionGroupFlow"
+}

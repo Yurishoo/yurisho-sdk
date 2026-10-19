@@ -1,0 +1,44 @@
+# BasicEggGroupFlow
+
+main: kit: flow: BasicEggGroupFlow:
+{
+  entity: "egg_group",
+  kind: "basic",
+  name: "BasicEggGroupFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "egg_group_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "egg_group_ref01",
+        srcdatavar: "egg_group_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "egg_group01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-egg_group_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicEggGroupFlow"
+}

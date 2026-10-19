@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "encounter_method": {
+      "ENCOUNTER_METHOD00": {
+        "id": "ENCOUNTER_METHOD00",
+        "name": "s33",
+        "names": [],
+        "order": "s35",
+        "url": "s36"
+      },
+      "ENCOUNTER_METHOD01": {
+        "id": "ENCOUNTER_METHOD01",
+        "name": "s65",
+        "names": [],
+        "order": "s67",
+        "url": "s68"
+      },
+      "ENCOUNTER_METHOD02": {
+        "id": "ENCOUNTER_METHOD02",
+        "name": "s97",
+        "names": [],
+        "order": "s99",
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "encounter_method": {
+      "encounter_method_ref01": {
+        "name": "sc9",
+        "names": [],
+        "order": "scb",
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/encounter-method/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/encounter-method/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

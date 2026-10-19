@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "move_damage_class": {
+      "MOVE_DAMAGE_CLASS00": {
+        "descriptions": [],
+        "id": "MOVE_DAMAGE_CLASS00",
+        "moves": [],
+        "name": "s3f",
+        "names": [],
+        "url": "s41"
+      },
+      "MOVE_DAMAGE_CLASS01": {
+        "descriptions": [],
+        "id": "MOVE_DAMAGE_CLASS01",
+        "moves": [],
+        "name": "s7b",
+        "names": [],
+        "url": "s7d"
+      },
+      "MOVE_DAMAGE_CLASS02": {
+        "descriptions": [],
+        "id": "MOVE_DAMAGE_CLASS02",
+        "moves": [],
+        "name": "sb7",
+        "names": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "move_damage_class": {
+      "move_damage_class_ref01": {
+        "descriptions": [],
+        "moves": [],
+        "name": "sf3",
+        "names": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/move-damage-class/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/move-damage-class/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

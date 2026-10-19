@@ -1,0 +1,44 @@
+# BasicBerryFlow
+
+main: kit: flow: BasicBerryFlow:
+{
+  entity: "berry",
+  kind: "basic",
+  name: "BasicBerryFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "berry_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "berry_ref01",
+        srcdatavar: "berry_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "berry01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-berry_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicBerryFlow"
+}

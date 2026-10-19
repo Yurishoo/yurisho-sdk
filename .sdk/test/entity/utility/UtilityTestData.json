@@ -1,0 +1,40 @@
+{
+  "existing": {
+    "utility": {
+      "UTILITY00": {
+        "deploy_date": "s1e",
+        "hash": "s1f",
+        "tag": "s20",
+        "id": "UTILITY00"
+      },
+      "UTILITY01": {
+        "deploy_date": "s3c",
+        "hash": "s3d",
+        "tag": "s3e",
+        "id": "UTILITY01"
+      },
+      "UTILITY02": {
+        "deploy_date": "s5a",
+        "hash": "s5b",
+        "tag": "s5c",
+        "id": "UTILITY02"
+      }
+    }
+  },
+  "new": {
+    "utility": {
+      "utility_ref01": {
+        "deploy_date": "s78",
+        "hash": "s79",
+        "tag": "s7a"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/meta/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "super_contest_effect": {
+      "SUPER_CONTEST_EFFECT00": {
+        "appeal": 50,
+        "flavor_text_entries": [],
+        "id": "SUPER_CONTEST_EFFECT00",
+        "moves": [],
+        "url": "s36"
+      },
+      "SUPER_CONTEST_EFFECT01": {
+        "appeal": 100,
+        "flavor_text_entries": [],
+        "id": "SUPER_CONTEST_EFFECT01",
+        "moves": [],
+        "url": "s68"
+      },
+      "SUPER_CONTEST_EFFECT02": {
+        "appeal": 150,
+        "flavor_text_entries": [],
+        "id": "SUPER_CONTEST_EFFECT02",
+        "moves": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "super_contest_effect": {
+      "super_contest_effect_ref01": {
+        "appeal": 200,
+        "flavor_text_entries": [],
+        "moves": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/super-contest-effect/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/super-contest-effect/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

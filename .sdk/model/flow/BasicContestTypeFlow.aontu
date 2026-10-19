@@ -1,0 +1,44 @@
+# BasicContestTypeFlow
+
+main: kit: flow: BasicContestTypeFlow:
+{
+  entity: "contest_type",
+  kind: "basic",
+  name: "BasicContestTypeFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "contest_type_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "contest_type_ref01",
+        srcdatavar: "contest_type_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "contest_type01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-contest_type_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicContestTypeFlow"
+}

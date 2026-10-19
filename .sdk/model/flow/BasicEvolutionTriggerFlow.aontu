@@ -1,0 +1,44 @@
+# BasicEvolutionTriggerFlow
+
+main: kit: flow: BasicEvolutionTriggerFlow:
+{
+  entity: "evolution_trigger",
+  kind: "basic",
+  name: "BasicEvolutionTriggerFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "evolution_trigger_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "evolution_trigger_ref01",
+        srcdatavar: "evolution_trigger_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "evolution_trigger01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-evolution_trigger_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicEvolutionTriggerFlow"
+}

@@ -1,0 +1,246 @@
+# Entity: item
+
+main: kit: entity: item: {
+
+  alias: field: {}
+
+  fields: {
+    attributes: {
+      h: "Attributes"
+      n: "attributes"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    baby_trigger_for: {
+      h: "Baby Trigger For"
+      n: "baby_trigger_for"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    category: {
+      h: "Category"
+      n: "category"
+      r: true
+      t: "`$OBJECT`"
+    }
+    effect_entries: {
+      h: "Effect Entries"
+      n: "effect_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    flavor_text_entries: {
+      h: "Flavor Text Entries"
+      n: "flavor_text_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    fling_effect: {
+      h: "Fling Effect"
+      n: "fling_effect"
+      r: true
+      t: "`$OBJECT`"
+    }
+    fling_power: {
+      h: "Fling Power"
+      n: "fling_power"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    game_indices: {
+      h: "Game Indices"
+      n: "game_indices"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    held_by_pokemon: {
+      h: "Held By Pokemon"
+      n: "held_by_pokemon"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    machines: {
+      h: "Machines"
+      n: "machines"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    prices: {
+      h: "Prices"
+      n: "prices"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    sprites: {
+      h: "Sprites"
+      n: "sprites"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "item"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/item/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/item/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "item"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/item/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/item/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "item"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

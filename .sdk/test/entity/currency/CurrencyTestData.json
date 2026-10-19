@@ -1,0 +1,45 @@
+{
+  "existing": {
+    "currency": {
+      "CURRENCY00": {
+        "id": "CURRENCY00",
+        "name": "s29",
+        "names": [],
+        "url": "s2b"
+      },
+      "CURRENCY01": {
+        "id": "CURRENCY01",
+        "name": "s51",
+        "names": [],
+        "url": "s53"
+      },
+      "CURRENCY02": {
+        "id": "CURRENCY02",
+        "name": "s79",
+        "names": [],
+        "url": "s7b"
+      }
+    }
+  },
+  "new": {
+    "currency": {
+      "currency_ref01": {
+        "name": "sa1",
+        "names": [],
+        "url": "sa3"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/currency/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/currency/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

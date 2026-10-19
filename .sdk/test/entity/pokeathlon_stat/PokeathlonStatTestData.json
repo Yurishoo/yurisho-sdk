@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "pokeathlon_stat": {
+      "POKEATHLON_STAT00": {
+        "affecting_natures": "s32",
+        "id": "POKEATHLON_STAT00",
+        "name": "s34",
+        "names": [],
+        "url": "s36"
+      },
+      "POKEATHLON_STAT01": {
+        "affecting_natures": "s64",
+        "id": "POKEATHLON_STAT01",
+        "name": "s66",
+        "names": [],
+        "url": "s68"
+      },
+      "POKEATHLON_STAT02": {
+        "affecting_natures": "s96",
+        "id": "POKEATHLON_STAT02",
+        "name": "s98",
+        "names": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "pokeathlon_stat": {
+      "pokeathlon_stat_ref01": {
+        "affecting_natures": "sc8",
+        "name": "sca",
+        "names": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokeathlon-stat/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokeathlon-stat/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

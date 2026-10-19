@@ -1,0 +1,44 @@
+# BasicItemFlingEffectFlow
+
+main: kit: flow: BasicItemFlingEffectFlow:
+{
+  entity: "item_fling_effect",
+  kind: "basic",
+  name: "BasicItemFlingEffectFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "item_fling_effect_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "item_fling_effect_ref01",
+        srcdatavar: "item_fling_effect_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "item_fling_effect01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-item_fling_effect_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicItemFlingEffectFlow"
+}

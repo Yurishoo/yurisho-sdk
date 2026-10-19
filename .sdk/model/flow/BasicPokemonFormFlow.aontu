@@ -1,0 +1,44 @@
+# BasicPokemonFormFlow
+
+main: kit: flow: BasicPokemonFormFlow:
+{
+  entity: "pokemon_form",
+  kind: "basic",
+  name: "BasicPokemonFormFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokemon_form_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokemon_form_ref01",
+        srcdatavar: "pokemon_form_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokemon_form01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokemon_form_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokemonFormFlow"
+}

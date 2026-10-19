@@ -1,0 +1,44 @@
+# BasicPokedexFlow
+
+main: kit: flow: BasicPokedexFlow:
+{
+  entity: "pokedex",
+  kind: "basic",
+  name: "BasicPokedexFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pokedex_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pokedex_ref01",
+        srcdatavar: "pokedex_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pokedex01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pokedex_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPokedexFlow"
+}

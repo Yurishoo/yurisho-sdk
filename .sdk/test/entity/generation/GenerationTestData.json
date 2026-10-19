@@ -1,0 +1,69 @@
+{
+  "existing": {
+    "generation": {
+      "GENERATION00": {
+        "abilities": [],
+        "id": "GENERATION00",
+        "main_region": {},
+        "moves": [],
+        "name": "s68",
+        "names": [],
+        "pokemon_species": [],
+        "types": [],
+        "url": "s6c",
+        "version_groups": []
+      },
+      "GENERATION01": {
+        "abilities": [],
+        "id": "GENERATION01",
+        "main_region": {},
+        "moves": [],
+        "name": "scc",
+        "names": [],
+        "pokemon_species": [],
+        "types": [],
+        "url": "sd0",
+        "version_groups": []
+      },
+      "GENERATION02": {
+        "abilities": [],
+        "id": "GENERATION02",
+        "main_region": {},
+        "moves": [],
+        "name": "s130",
+        "names": [],
+        "pokemon_species": [],
+        "types": [],
+        "url": "s134",
+        "version_groups": []
+      }
+    }
+  },
+  "new": {
+    "generation": {
+      "generation_ref01": {
+        "abilities": [],
+        "main_region": {},
+        "moves": [],
+        "name": "s194",
+        "names": [],
+        "pokemon_species": [],
+        "types": [],
+        "url": "s198",
+        "version_groups": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/generation/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/generation/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

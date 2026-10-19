@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "pokemon_encounter": {
+      "POKEMON_ENCOUNTER00": {
+        "id": "POKEMON_ENCOUNTER00",
+        "location_area": {},
+        "version_details": []
+      },
+      "POKEMON_ENCOUNTER01": {
+        "id": "POKEMON_ENCOUNTER01",
+        "location_area": {},
+        "version_details": []
+      },
+      "POKEMON_ENCOUNTER02": {
+        "id": "POKEMON_ENCOUNTER02",
+        "location_area": {},
+        "version_details": []
+      }
+    }
+  },
+  "new": {
+    "pokemon_encounter": {
+      "pokemon_encounter_ref01": {
+        "location_area": {},
+        "version_details": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon/{pokemon_id}/encounters": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

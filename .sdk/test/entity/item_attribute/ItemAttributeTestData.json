@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "item_attribute": {
+      "ITEM_ATTRIBUTE00": {
+        "descriptions": [],
+        "id": "ITEM_ATTRIBUTE00",
+        "items": [],
+        "name": "s3f",
+        "names": [],
+        "url": "s41"
+      },
+      "ITEM_ATTRIBUTE01": {
+        "descriptions": [],
+        "id": "ITEM_ATTRIBUTE01",
+        "items": [],
+        "name": "s7b",
+        "names": [],
+        "url": "s7d"
+      },
+      "ITEM_ATTRIBUTE02": {
+        "descriptions": [],
+        "id": "ITEM_ATTRIBUTE02",
+        "items": [],
+        "name": "sb7",
+        "names": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "item_attribute": {
+      "item_attribute_ref01": {
+        "descriptions": [],
+        "items": [],
+        "name": "sf3",
+        "names": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/item-attribute/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/item-attribute/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# BasicItemCategoryFlow
+
+main: kit: flow: BasicItemCategoryFlow:
+{
+  entity: "item_category",
+  kind: "basic",
+  name: "BasicItemCategoryFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "item_category_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "item_category_ref01",
+        srcdatavar: "item_category_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "item_category01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-item_category_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicItemCategoryFlow"
+}

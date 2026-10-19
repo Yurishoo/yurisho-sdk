@@ -1,0 +1,254 @@
+# Entity: pokemon_form
+
+main: kit: entity: pokemon_form: {
+
+  alias: field: {}
+
+  fields: {
+    flavor_text_entries: {
+      h: "Flavor Text Entries"
+      n: "flavor_text_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    form_name: {
+      h: "Form Name"
+      n: "form_name"
+      r: true
+      t: "`$STRING`"
+    }
+    form_names: {
+      h: "Form Names"
+      n: "form_names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    form_order: {
+      h: "Form Order"
+      n: "form_order"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    is_battle_only: {
+      h: "Is Battle Only"
+      n: "is_battle_only"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    is_default: {
+      h: "Is Default"
+      n: "is_default"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    is_mega: {
+      h: "Is Mega"
+      n: "is_mega"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    order: {
+      h: "Order"
+      n: "order"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    pokemon: {
+      h: "Pokemon"
+      n: "pokemon"
+      r: true
+      t: "`$OBJECT`"
+    }
+    sprites: {
+      h: "Sprites"
+      n: "sprites"
+      r: true
+      ro: true
+      t: "`$ANY`"
+    }
+    trigger_conditions: {
+      h: "Trigger Conditions"
+      n: "trigger_conditions"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    types: {
+      h: "Types"
+      n: "types"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+    version_group: {
+      h: "Version Group"
+      n: "version_group"
+      r: true
+      t: "`$OBJECT`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "pokemon_form"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon-form/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon-form/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon-form"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon-form/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon-form/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon-form"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

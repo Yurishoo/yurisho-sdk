@@ -1,0 +1,44 @@
+# BasicPalParkAreaFlow
+
+main: kit: flow: BasicPalParkAreaFlow:
+{
+  entity: "pal_park_area",
+  kind: "basic",
+  name: "BasicPalParkAreaFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "pal_park_area_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "pal_park_area_ref01",
+        srcdatavar: "pal_park_area_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "pal_park_area01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pal_park_area_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPalParkAreaFlow"
+}

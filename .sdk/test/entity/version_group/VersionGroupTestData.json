@@ -1,0 +1,65 @@
+{
+  "existing": {
+    "version_group": {
+      "VERSION_GROUP00": {
+        "generation": {},
+        "id": "VERSION_GROUP00",
+        "move_learn_methods": [],
+        "name": "s5d",
+        "order": "s5e",
+        "pokedexes": [],
+        "regions": [],
+        "url": "s61",
+        "versions": []
+      },
+      "VERSION_GROUP01": {
+        "generation": {},
+        "id": "VERSION_GROUP01",
+        "move_learn_methods": [],
+        "name": "sb7",
+        "order": "sb8",
+        "pokedexes": [],
+        "regions": [],
+        "url": "sbb",
+        "versions": []
+      },
+      "VERSION_GROUP02": {
+        "generation": {},
+        "id": "VERSION_GROUP02",
+        "move_learn_methods": [],
+        "name": "s111",
+        "order": "s112",
+        "pokedexes": [],
+        "regions": [],
+        "url": "s115",
+        "versions": []
+      }
+    }
+  },
+  "new": {
+    "version_group": {
+      "version_group_ref01": {
+        "generation": {},
+        "move_learn_methods": [],
+        "name": "s16b",
+        "order": "s16c",
+        "pokedexes": [],
+        "regions": [],
+        "url": "s16f",
+        "versions": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/version-group/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/version-group/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

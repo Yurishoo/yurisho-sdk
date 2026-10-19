@@ -1,0 +1,44 @@
+# BasicEncounterMethodFlow
+
+main: kit: flow: BasicEncounterMethodFlow:
+{
+  entity: "encounter_method",
+  kind: "basic",
+  name: "BasicEncounterMethodFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "encounter_method_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "encounter_method_ref01",
+        srcdatavar: "encounter_method_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "encounter_method01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-encounter_method_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicEncounterMethodFlow"
+}

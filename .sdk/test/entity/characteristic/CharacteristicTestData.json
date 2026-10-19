@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "characteristic": {
+      "CHARACTERISTIC00": {
+        "descriptions": [],
+        "gene_modulo": 61,
+        "highest_stat": {},
+        "id": "CHARACTERISTIC00",
+        "possible_values": [],
+        "url": "s41"
+      },
+      "CHARACTERISTIC01": {
+        "descriptions": [],
+        "gene_modulo": 121,
+        "highest_stat": {},
+        "id": "CHARACTERISTIC01",
+        "possible_values": [],
+        "url": "s7d"
+      },
+      "CHARACTERISTIC02": {
+        "descriptions": [],
+        "gene_modulo": 181,
+        "highest_stat": {},
+        "id": "CHARACTERISTIC02",
+        "possible_values": [],
+        "url": "sb9"
+      }
+    }
+  },
+  "new": {
+    "characteristic": {
+      "characteristic_ref01": {
+        "descriptions": [],
+        "gene_modulo": 241,
+        "highest_stat": {},
+        "possible_values": [],
+        "url": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/characteristic/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/characteristic/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

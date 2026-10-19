@@ -1,0 +1,69 @@
+{
+  "existing": {
+    "ability": {
+      "ABILITY00": {
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "ABILITY00",
+        "is_main_series": false,
+        "name": "s6a",
+        "names": [],
+        "pokemon": [],
+        "url": "s6d"
+      },
+      "ABILITY01": {
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "ABILITY01",
+        "is_main_series": false,
+        "name": "sce",
+        "names": [],
+        "pokemon": [],
+        "url": "sd1"
+      },
+      "ABILITY02": {
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "id": "ABILITY02",
+        "is_main_series": false,
+        "name": "s132",
+        "names": [],
+        "pokemon": [],
+        "url": "s135"
+      }
+    }
+  },
+  "new": {
+    "ability": {
+      "ability_ref01": {
+        "effect_changes": [],
+        "effect_entries": [],
+        "flavor_text_entries": [],
+        "generation": {},
+        "is_main_series": false,
+        "name": "s196",
+        "names": [],
+        "pokemon": [],
+        "url": "s199"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/ability/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/ability/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

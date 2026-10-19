@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "berry_firmness": {
+      "BERRY_FIRMNESS00": {
+        "berries": [],
+        "id": "BERRY_FIRMNESS00",
+        "name": "s34",
+        "names": [],
+        "url": "s36"
+      },
+      "BERRY_FIRMNESS01": {
+        "berries": [],
+        "id": "BERRY_FIRMNESS01",
+        "name": "s66",
+        "names": [],
+        "url": "s68"
+      },
+      "BERRY_FIRMNESS02": {
+        "berries": [],
+        "id": "BERRY_FIRMNESS02",
+        "name": "s98",
+        "names": [],
+        "url": "s9a"
+      }
+    }
+  },
+  "new": {
+    "berry_firmness": {
+      "berry_firmness_ref01": {
+        "berries": [],
+        "name": "sca",
+        "names": [],
+        "url": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/berry-firmness/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/berry-firmness/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# BasicMoveFlow
+
+main: kit: flow: BasicMoveFlow:
+{
+  entity: "move",
+  kind: "basic",
+  name: "BasicMoveFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "move_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "move_ref01",
+        srcdatavar: "move_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "move01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-move_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMoveFlow"
+}

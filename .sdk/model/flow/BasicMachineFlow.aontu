@@ -1,0 +1,44 @@
+# BasicMachineFlow
+
+main: kit: flow: BasicMachineFlow:
+{
+  entity: "machine",
+  kind: "basic",
+  name: "BasicMachineFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "machine_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "machine_ref01",
+        srcdatavar: "machine_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "machine01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-machine_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMachineFlow"
+}

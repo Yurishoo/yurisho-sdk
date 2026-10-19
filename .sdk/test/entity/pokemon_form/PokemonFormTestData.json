@@ -1,0 +1,97 @@
+{
+  "existing": {
+    "pokemon_form": {
+      "POKEMON_FORM00": {
+        "flavor_text_entries": [],
+        "form_name": "sab",
+        "form_names": [],
+        "form_order": "sad",
+        "id": "POKEMON_FORM00",
+        "is_battle_only": false,
+        "is_default": true,
+        "is_mega": false,
+        "name": "sb2",
+        "names": [],
+        "order": "sb4",
+        "pokemon": {},
+        "sprites": "sb6",
+        "trigger_conditions": [],
+        "types": [],
+        "url": "sb9",
+        "version_group": {}
+      },
+      "POKEMON_FORM01": {
+        "flavor_text_entries": [],
+        "form_name": "s155",
+        "form_names": [],
+        "form_order": "s157",
+        "id": "POKEMON_FORM01",
+        "is_battle_only": false,
+        "is_default": true,
+        "is_mega": false,
+        "name": "s15c",
+        "names": [],
+        "order": "s15e",
+        "pokemon": {},
+        "sprites": "s160",
+        "trigger_conditions": [],
+        "types": [],
+        "url": "s163",
+        "version_group": {}
+      },
+      "POKEMON_FORM02": {
+        "flavor_text_entries": [],
+        "form_name": "s1ff",
+        "form_names": [],
+        "form_order": "s201",
+        "id": "POKEMON_FORM02",
+        "is_battle_only": false,
+        "is_default": true,
+        "is_mega": false,
+        "name": "s206",
+        "names": [],
+        "order": "s208",
+        "pokemon": {},
+        "sprites": "s20a",
+        "trigger_conditions": [],
+        "types": [],
+        "url": "s20d",
+        "version_group": {}
+      }
+    }
+  },
+  "new": {
+    "pokemon_form": {
+      "pokemon_form_ref01": {
+        "flavor_text_entries": [],
+        "form_name": "s2a9",
+        "form_names": [],
+        "form_order": "s2ab",
+        "is_battle_only": false,
+        "is_default": true,
+        "is_mega": false,
+        "name": "s2b0",
+        "names": [],
+        "order": "s2b2",
+        "pokemon": {},
+        "sprites": "s2b4",
+        "trigger_conditions": [],
+        "types": [],
+        "url": "s2b7",
+        "version_group": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/pokemon-form/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/pokemon-form/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,340 @@
+# Entity: pokemon_species
+
+main: kit: entity: pokemon_species: {
+
+  alias: field: {}
+
+  fields: {
+    base_happiness: {
+      h: "Base Happiness"
+      n: "base_happiness"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    capture_rate: {
+      h: "Capture Rate"
+      n: "capture_rate"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    color: {
+      h: "Color"
+      n: "color"
+      r: true
+      t: "`$OBJECT`"
+    }
+    egg_groups: {
+      h: "Egg Groups"
+      n: "egg_groups"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    evolution_chain: {
+      h: "Evolution Chain"
+      n: "evolution_chain"
+      r: true
+      t: "`$OBJECT`"
+    }
+    evolves_from_species: {
+      h: "Evolves From Species"
+      n: "evolves_from_species"
+      r: true
+      t: "`$OBJECT`"
+    }
+    flavor_text_entries: {
+      h: "Flavor Text Entries"
+      n: "flavor_text_entries"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    form_descriptions: {
+      h: "Form Descriptions"
+      n: "form_descriptions"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    forms_switchable: {
+      h: "Forms Switchable"
+      n: "forms_switchable"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    gender_rate: {
+      h: "Gender Rate"
+      n: "gender_rate"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    genera: {
+      h: "Genera"
+      n: "genera"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    generation: {
+      h: "Generation"
+      n: "generation"
+      r: true
+      t: "`$OBJECT`"
+    }
+    growth_rate: {
+      h: "Growth Rate"
+      n: "growth_rate"
+      r: true
+      t: "`$OBJECT`"
+    }
+    habitat: {
+      h: "Habitat"
+      n: "habitat"
+      r: true
+      t: "`$OBJECT`"
+    }
+    has_gender_differences: {
+      h: "Has Gender Differences"
+      n: "has_gender_differences"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    hatch_counter: {
+      h: "Hatch Counter"
+      n: "hatch_counter"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: true
+      ro: true
+      t: "`$INTEGER`"
+    }
+    is_baby: {
+      h: "Is Baby"
+      n: "is_baby"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    is_legendary: {
+      h: "Is Legendary"
+      n: "is_legendary"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    is_mythical: {
+      h: "Is Mythical"
+      n: "is_mythical"
+      r: false
+      t: "`$BOOLEAN`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: true
+      t: "`$STRING`"
+    }
+    names: {
+      h: "Names"
+      n: "names"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    order: {
+      h: "Order"
+      n: "order"
+      r: false
+      t: [
+        "`$ONE`"
+        [
+          "`$INTEGER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    pal_park_encounters: {
+      h: "Pal Park Encounters"
+      n: "pal_park_encounters"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    pokedex_numbers: {
+      h: "Pokedex Numbers"
+      n: "pokedex_numbers"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+    shape: {
+      h: "Shape"
+      n: "shape"
+      r: true
+      t: "`$OBJECT`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      ro: true
+      t: "`$STRING`"
+    }
+    varieties: {
+      h: "Varieties"
+      n: "varieties"
+      r: true
+      ro: true
+      t: "`$ARRAY`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "pokemon_species"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon-species/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "offset"
+                or: "offset"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon-species/"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon-species"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.results`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/v2/pokemon-species/{id}/"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "id"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/v2/pokemon-species/{id}/"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "v2"
+            }
+            {
+              lit: "pokemon-species"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "encounter_condition": {
+      "ENCOUNTER_CONDITION00": {
+        "id": "ENCOUNTER_CONDITION00",
+        "name": "s33",
+        "names": [],
+        "url": "s35",
+        "values": []
+      },
+      "ENCOUNTER_CONDITION01": {
+        "id": "ENCOUNTER_CONDITION01",
+        "name": "s65",
+        "names": [],
+        "url": "s67",
+        "values": []
+      },
+      "ENCOUNTER_CONDITION02": {
+        "id": "ENCOUNTER_CONDITION02",
+        "name": "s97",
+        "names": [],
+        "url": "s99",
+        "values": []
+      }
+    }
+  },
+  "new": {
+    "encounter_condition": {
+      "encounter_condition_ref01": {
+        "name": "sc9",
+        "names": [],
+        "url": "scb",
+        "values": []
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v2/encounter-condition/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/v2/encounter-condition/{id}/": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

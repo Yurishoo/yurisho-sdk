@@ -1,0 +1,44 @@
+# BasicGenderFlow
+
+main: kit: flow: BasicGenderFlow:
+{
+  entity: "gender",
+  kind: "basic",
+  name: "BasicGenderFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "gender_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "gender_ref01",
+        srcdatavar: "gender_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "gender01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-gender_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicGenderFlow"
+}

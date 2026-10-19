@@ -1,0 +1,44 @@
+# BasicEncounterConditionValueFlow
+
+main: kit: flow: BasicEncounterConditionValueFlow:
+{
+  entity: "encounter_condition_value",
+  kind: "basic",
+  name: "BasicEncounterConditionValueFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "encounter_condition_value_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "encounter_condition_value_ref01",
+        srcdatavar: "encounter_condition_value_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "encounter_condition_value01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-encounter_condition_value_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicEncounterConditionValueFlow"
+}
